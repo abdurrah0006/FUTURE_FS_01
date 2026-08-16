@@ -1,0 +1,428 @@
+.about-page {
+  background: var(--color-background);
+}
+
+.about-page-hero {
+  min-height: 80vh;
+  display: flex;
+  align-items: center;
+  padding: 150px 0 var(--space-20);
+}
+
+.about-page-heading {
+  max-width: 1000px;
+}
+
+.page-eyebrow {
+  color: var(--color-primary);
+  font-family: monospace;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.about-page-heading h1 {
+  margin-top: var(--space-6);
+  font-family: var(--font-display);
+  font-size: clamp(4rem, 10vw, 9rem);
+  line-height: 0.88;
+  letter-spacing: -0.06em;
+}
+
+.about-page-heading h1 span {
+  display: block;
+  color: var(--color-primary);
+}
+
+.about-page-heading > p {
+  max-width: 650px;
+  margin-top: var(--space-10);
+  color: var(--color-text-secondary);
+  font-size: clamp(1.1rem, 2vw, 1.4rem);
+  line-height: var(--line-relaxed);
+}
+
+.about-page-scroll {
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+  margin-top: var(--space-16);
+  color: var(--color-text-muted);
+  font-family: monospace;
+  font-size: 9px;
+  letter-spacing: 0.1em;
+}
+
+.about-page-scroll svg {
+  color: var(--color-primary);
+}
+
+.about-introduction {
+  background: var(--color-background-alt);
+}
+
+.about-introduction-grid {
+  display: grid;
+  grid-template-columns: 220px 1fr;
+  gap: var(--space-16);
+}
+
+.about-section-label {
+  display: flex;
+  align-items: flex-start;
+  gap: var(--space-3);
+}
+
+.about-section-label span {
+  color: var(--color-primary);
+  font-family: monospace;
+  font-size: 11px;
+  font-weight: 700;
+}
+
+.about-section-label p {
+  color: var(--color-text-muted);
+  font-family: monospace;
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+}
+
+.about-introduction-content {
+  max-width: 850px;
+}
+
+.about-introduction-content h2 {
+  font-family: var(--font-display);
+  font-size: clamp(2.2rem, 5vw, 4.5rem);
+  line-height: 1;
+  letter-spacing: -0.04em;
+}
+
+.about-introduction-content p {
+  max-width: 750px;
+  margin-top: var(--space-8);
+  color: var(--color-text-secondary);
+  font-size: var(--text-lg);
+  line-height: var(--line-relaxed);
+}
+
+.about-introduction-content p + p {
+  margin-top: var(--space-5);
+}
+
+.about-services {
+  background: var(--color-background);
+}
+
+.about-section-heading {
+  display: grid;
+  grid-template-columns: 220px 1fr;
+  gap: var(--space-16);
+  align-items: start;
+}
+
+.about-section-heading > h2 {
+  max-width: 800px;
+  font-family: var(--font-display);
+  font-size: clamp(2.5rem, 6vw, 5rem);
+  line-height: 0.95;
+  letter-spacing: -0.05em;
+}
+
+.about-section-heading > h2 span {
+  color: var(--color-primary);
+}
+
+.about-services-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1px;
+  margin-top: var(--space-16);
+  overflow: hidden;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-2xl);
+  background: var(--color-border);
+}
+
+.about-service-card {
+  min-height: 300px;
+  padding: var(--space-10);
+  background: var(--color-background);
+  transition:
+    background var(--transition-normal),
+    transform var(--transition-normal);
+}
+
+.about-service-card:hover {
+  background: var(--color-surface);
+}
+
+.about-service-number {
+  color: var(--color-primary);
+  font-family: monospace;
+  font-size: 11px;
+  font-weight: 700;
+}
+
+.about-service-card h3 {
+  margin-top: var(--space-16);
+  font-family: var(--font-display);
+  font-size: clamp(1.6rem, 3vw, 2.5rem);
+  letter-spacing: -0.03em;
+}
+
+.about-service-card p {
+  max-width: 450px;
+  margin-top: var(--space-5);
+  color: var(--color-text-muted);
+  font-size: var(--text-sm);
+  line-height: var(--line-relaxed);
+}
+
+.about-experience {
+  background: var(--color-background-alt);
+}
+
+.about-experience-list {
+  margin-top: var(--space-16);
+  border-top: 1px solid var(--color-border);
+}
+
+.about-experience-item {
+  display: grid;
+  grid-template-columns: 220px 1fr;
+  gap: var(--space-16);
+  padding: var(--space-10) 0;
+  border-bottom: 1px solid var(--color-border);
+}
+
+.about-experience-period {
+  color: var(--color-primary);
+  font-family: monospace;
+  font-size: var(--text-sm);
+  font-weight: 700;
+}
+
+.about-experience-main {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--space-6) var(--space-10);
+}
+
+.about-experience-main > div:first-child span {
+  color: var(--color-text-muted);
+  font-family: monospace;
+  font-size: 10px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.about-experience-main h3 {
+  margin-top: var(--space-3);
+  font-family: var(--font-display);
+  font-size: var(--text-xl);
+}
+
+.about-experience-main h4 {
+  margin-top: 4px;
+  color: var(--color-text-secondary);
+  font-size: var(--text-sm);
+}
+
+.about-experience-main > p {
+  color: var(--color-text-muted);
+  font-size: var(--text-sm);
+  line-height: var(--line-relaxed);
+}
+
+.about-experience-tech {
+  grid-column: 1 / -1;
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-2);
+}
+
+.about-experience-tech span {
+  padding: 0.35rem 0.65rem;
+  border-radius: var(--radius-full);
+  background: var(--color-surface);
+  color: var(--color-text-muted);
+  font-size: 10px;
+}
+
+.about-education {
+  background: var(--color-background);
+}
+
+.about-credentials-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--space-16);
+  margin-top: var(--space-16);
+}
+
+.credentials-heading {
+  display: block;
+  margin-bottom: var(--space-5);
+  color: var(--color-primary);
+  font-family: monospace;
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.credential-card {
+  padding: var(--space-8);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-xl);
+  background: var(--color-surface);
+}
+
+.credential-card + .credential-card {
+  margin-top: var(--space-4);
+}
+
+.credential-card > span {
+  color: var(--color-primary);
+  font-family: monospace;
+  font-size: 10px;
+  font-weight: 700;
+}
+
+.credential-card h3 {
+  margin-top: var(--space-4);
+  font-family: var(--font-display);
+  font-size: var(--text-xl);
+}
+
+.credential-card h4 {
+  margin-top: 4px;
+  color: var(--color-text-secondary);
+  font-size: var(--text-sm);
+}
+
+.credential-card p {
+  margin-top: var(--space-5);
+  color: var(--color-text-muted);
+  font-size: var(--text-sm);
+  line-height: var(--line-relaxed);
+}
+
+.about-resume {
+  background: var(--color-background-alt);
+}
+
+.about-resume-card {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-10);
+  padding: clamp(2rem, 5vw, 4rem);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-2xl);
+  background: var(--color-surface);
+}
+
+.about-resume-card h2 {
+  max-width: 650px;
+  margin-top: var(--space-4);
+  font-family: var(--font-display);
+  font-size: clamp(2rem, 4vw, 3.5rem);
+  line-height: 1;
+  letter-spacing: -0.04em;
+}
+
+.about-resume-actions {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: var(--space-4);
+  flex-shrink: 0;
+}
+
+.resume-button {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-2);
+  padding: 0.85rem 1.1rem;
+  border-radius: var(--radius-full);
+  background: var(--color-primary);
+  color: white;
+  font-size: var(--text-sm);
+  font-weight: 700;
+}
+
+.resume-button:hover {
+  opacity: 0.9;
+}
+
+.resume-contact-link {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-2);
+  color: var(--color-text-secondary);
+  font-size: var(--text-sm);
+  font-weight: 600;
+}
+
+.resume-contact-link:hover {
+  color: var(--color-primary);
+}
+
+@media (max-width: 900px) {
+  .about-introduction-grid,
+  .about-section-heading,
+  .about-experience-item {
+    grid-template-columns: 1fr;
+    gap: var(--space-6);
+  }
+
+  .about-experience-main {
+    grid-template-columns: 1fr;
+  }
+
+  .about-credentials-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .about-resume-card {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 650px) {
+  .about-page-hero {
+    min-height: 70vh;
+    padding-top: 130px;
+  }
+
+  .about-page-heading h1 {
+    font-size: clamp(3.5rem, 16vw, 6rem);
+  }
+
+  .about-services-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .about-service-card {
+    min-height: auto;
+    padding: var(--space-8);
+  }
+
+  .about-service-card h3 {
+    margin-top: var(--space-10);
+  }
+
+  .about-experience-item {
+    padding: var(--space-8) 0;
+  }
+
+  .about-resume-actions {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+}

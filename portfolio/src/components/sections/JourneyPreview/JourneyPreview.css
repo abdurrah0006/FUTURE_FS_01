@@ -1,0 +1,239 @@
+.journey-preview {
+  background: var(--color-background-alt);
+}
+
+.journey-header {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: var(--space-8);
+}
+
+.journey-header .section-heading {
+  margin-bottom: 0;
+}
+
+.journey-view-link {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-2);
+  flex-shrink: 0;
+  margin-bottom: var(--space-2);
+  color: var(--color-primary);
+  font-size: var(--text-sm);
+  font-weight: 600;
+}
+
+.journey-view-link svg {
+  transition: transform var(--transition-fast);
+}
+
+.journey-view-link:hover svg {
+  transform: rotate(45deg);
+}
+
+.journey-grid {
+  display: grid;
+  grid-template-columns: 1.3fr 0.7fr;
+  gap: var(--space-16);
+  margin-top: var(--space-14);
+}
+
+.journey-column-heading {
+  display: flex;
+  align-items: center;
+  gap: var(--space-4);
+  margin-bottom: var(--space-10);
+}
+
+.journey-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 48px;
+  height: 48px;
+  flex-shrink: 0;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+  background: var(--color-surface);
+  color: var(--color-primary);
+}
+
+.journey-column-heading > div > span {
+  color: var(--color-primary);
+  font-family: monospace;
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+}
+
+.journey-column-heading h3 {
+  margin-top: 4px;
+  font-family: var(--font-display);
+  font-size: var(--text-xl);
+}
+
+.timeline {
+  position: relative;
+  padding-left: 28px;
+}
+
+.timeline::before {
+  position: absolute;
+  top: 6px;
+  bottom: 0;
+  left: 4px;
+  width: 1px;
+  background: var(--color-border);
+  content: "";
+}
+
+.timeline-item {
+  position: relative;
+  padding-bottom: var(--space-10);
+}
+
+.timeline-item:last-child {
+  padding-bottom: 0;
+}
+
+.timeline-marker {
+  position: absolute;
+  top: 5px;
+  left: -28px;
+  width: 10px;
+  height: 10px;
+  border: 2px solid var(--color-primary);
+  border-radius: 50%;
+  background: var(--color-background-alt);
+}
+
+.timeline-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-4);
+}
+
+.timeline-period {
+  color: var(--color-primary);
+  font-family: monospace;
+  font-size: var(--text-xs);
+  font-weight: 700;
+}
+
+.timeline-type {
+  color: var(--color-text-muted);
+  font-size: 10px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.timeline-content h4 {
+  margin-top: var(--space-3);
+  font-family: var(--font-display);
+  font-size: var(--text-lg);
+}
+
+.timeline-company {
+  display: block;
+  margin-top: 4px;
+  color: var(--color-text-secondary);
+  font-size: var(--text-sm);
+  font-weight: 600;
+}
+
+.timeline-content p {
+  margin-top: var(--space-4);
+  color: var(--color-text-muted);
+  font-size: var(--text-sm);
+  line-height: var(--line-relaxed);
+}
+
+.timeline-technologies {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-2);
+  margin-top: var(--space-4);
+}
+
+.timeline-technologies span {
+  padding: 0.3rem 0.55rem;
+  border-radius: var(--radius-full);
+  background: var(--color-surface);
+  color: var(--color-text-muted);
+  font-size: 10px;
+}
+
+.education-column {
+  padding-left: var(--space-8);
+}
+
+.education-card {
+  padding: var(--space-8);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-xl);
+  background: var(--color-surface);
+}
+
+.education-period {
+  color: var(--color-primary);
+  font-family: monospace;
+  font-size: var(--text-xs);
+  font-weight: 700;
+}
+
+.education-card h4 {
+  margin-top: var(--space-4);
+  font-family: var(--font-display);
+  font-size: var(--text-xl);
+}
+
+.education-institution {
+  display: block;
+  margin-top: 4px;
+  color: var(--color-text-secondary);
+  font-size: var(--text-sm);
+  font-weight: 600;
+}
+
+.education-card p {
+  margin-top: var(--space-5);
+  color: var(--color-text-muted);
+  font-size: var(--text-sm);
+  line-height: var(--line-relaxed);
+}
+
+@media (max-width: 900px) {
+  .journey-grid {
+    grid-template-columns: 1fr;
+    gap: var(--space-14);
+  }
+
+  .education-column {
+    padding-left: 0;
+  }
+}
+
+@media (max-width: 700px) {
+  .journey-header {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .journey-grid {
+    margin-top: var(--space-10);
+  }
+}
+
+@media (max-width: 500px) {
+  .timeline-top {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: var(--space-2);
+  }
+
+  .education-card {
+    padding: var(--space-6);
+  }
+}
