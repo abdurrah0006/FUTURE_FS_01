@@ -6,6 +6,73 @@ The portfolio is designed as both a personal brand website and a professional pl
 
 It combines modern frontend development, responsive UI/UX design, animations, interactive project presentations, 3D visuals, and a theme-based design system to create a polished digital representation of my work.
 
+![Portfolio Preview](./image/portfolio-preview.png)
+---
+
+## 🖼️ Website Preview
+
+### 🏠 Home / Hero
+
+![Portfolio Homepage](./image/home.png)
+
+The homepage introduces my professional profile through a modern hero section featuring animated UI elements, interactive 3D visuals, technology highlights, and clear calls to action.
+
+---
+
+### 👨‍💻 About
+
+![About Page](./image/about.png)
+
+The About section presents my background, development approach, technical strengths, and professional profile.
+
+---
+
+### 🚀 Projects
+
+![Projects Page](./image/projects.png)
+
+The Projects section showcases selected development work with project previews, technologies, categories, and links to detailed case studies.
+
+---
+
+### 📖 Project Details
+
+![Project Details](./image/project-details.png)
+
+Each project has a dedicated case-study-style page containing the project overview, problem, solution, development process, features, technologies, challenges, learnings, screenshots, and project links.
+
+---
+
+### 💼 Experience
+
+![Experience Page](./image/experience.png)
+
+The Experience section presents my internships, professional experience, responsibilities, and development journey.
+
+---
+
+### 📄 Resume
+
+![Resume Page](./image/resume.png)
+
+The Resume section provides a structured overview of my education, experience, skills, and professional background.
+
+---
+
+### 📬 Contact
+
+![Contact Page](./image/contact.png)
+
+The Contact page provides multiple ways to get in touch, including email, phone, WhatsApp, social profiles, and the contact form.
+
+---
+
+### 📱 Responsive Design
+
+#### Mobile
+
+![Mobile Responsive View](./image/responsive-mobile.png)
+
 ---
 
 ## ✨ Features
