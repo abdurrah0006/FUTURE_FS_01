@@ -6,14 +6,17 @@ The portfolio is designed as both a personal brand website and a professional pl
 
 It combines modern frontend development, responsive UI/UX design, animations, interactive project presentations, 3D visuals, and a theme-based design system to create a polished digital representation of my work.
 
-![Portfolio Preview](./image/portfolio-preview.png)
 ---
 
 ## 🖼️ Website Preview
 
-### 🏠 Home / Hero
+### 🏠 Home / HeroLight
 
-![Portfolio Homepage](./image/home.png)
+![Portfolio Homepage Light](./image/heroLight.png)
+
+### 🏠 Home / HeroDark
+
+![Portfolio Homepage Dark](./image/heroDark.png)
 
 The homepage introduces my professional profile through a modern hero section featuring animated UI elements, interactive 3D visuals, technology highlights, and clear calls to action.
 
@@ -29,17 +32,9 @@ The About section presents my background, development approach, technical streng
 
 ### 🚀 Projects
 
-![Projects Page](./image/projects.png)
+![Projects Page](./image/project.png)
 
 The Projects section showcases selected development work with project previews, technologies, categories, and links to detailed case studies.
-
----
-
-### 📖 Project Details
-
-![Project Details](./image/project-details.png)
-
-Each project has a dedicated case-study-style page containing the project overview, problem, solution, development process, features, technologies, challenges, learnings, screenshots, and project links.
 
 ---
 
@@ -64,14 +59,6 @@ The Resume section provides a structured overview of my education, experience, s
 ![Contact Page](./image/contact.png)
 
 The Contact page provides multiple ways to get in touch, including email, phone, WhatsApp, social profiles, and the contact form.
-
----
-
-### 📱 Responsive Design
-
-#### Mobile
-
-![Mobile Responsive View](./image/responsive-mobile.png)
 
 ---
 
