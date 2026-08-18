@@ -6,7 +6,7 @@ const themes = ["purple", "blue", "rose", "dark"];
 
 function ThemeProvider({ children }) {
   const [theme, setTheme] = useState(() => {
-    return localStorage.getItem("portfolio-theme") || "purple";
+    return localStorage.getItem("portfolio-theme") || "rose";
   });
 
   useEffect(() => {
@@ -21,7 +21,7 @@ function ThemeProvider({ children }) {
 
   const toggleDarkMode = () => {
     setTheme((currentTheme) =>
-      currentTheme === "dark" ? "purple" : "dark"
+      currentTheme === "dark" ? "rose" : "dark"
     );
   };
 

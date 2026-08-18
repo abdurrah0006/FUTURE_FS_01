@@ -1,7 +1,7 @@
 const profileData = {
-  name: "Your Name",
-  firstName: "Your",
-  lastName: "Name",
+  name: "Abdur Rahman",
+  firstName: "Abdur",
+  lastName: "Rahman",
   title: "Full-Stack Web Developer & UI/UX Designer",
   shortTitle: "Full-Stack Developer",
   tagline: "I design and build modern digital experiences.",
@@ -10,7 +10,7 @@ const profileData = {
   availability: "Available for opportunities",
   profileImage: "/images/profile.jpg",
   email: "your.email@example.com",
-  phone: "+971 XX XXX XXXX",
+  phone: "+971 58 765 4321",
 
   resume: {
     file: "/resume/resume.pdf",
@@ -52,7 +52,7 @@ const profileData = {
   },
   
   stats: [
-    { value: "10+", label: "Projects Built" },
+    { value: "30+", label: "Projects Built" },
     { value: "1.5+", label: "Years Experience" },
     { value: "3+", label: "Internships" }
   ],

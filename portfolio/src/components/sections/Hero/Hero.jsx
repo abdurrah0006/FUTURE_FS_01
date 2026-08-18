@@ -1,6 +1,5 @@
 import { motion } from "framer-motion";
-import { FiArrowUpRight, FiGithub, FiLinkedin, FiMail, FiMapPin } from "react-icons/fi";
-import { Link } from "react-router-dom";
+import { FiArrowUpRight, FiGithub, FiLinkedin, FiMail } from "react-icons/fi";
 import profileData from "../../../data/profileData";
 import contactData from "../../../data/contactData";
 import Button from "../../common/Button/Button";
@@ -10,13 +9,14 @@ import "./Hero.css";
 const socialIcons = {
   github: FiGithub,
   linkedin: FiLinkedin,
+  email: FiMail,
   mail: FiMail
 };
 
 function Hero() {
   return (
     <section className="hero">
-      <div className="hero-background">
+      <div className="hero-background" aria-hidden="true">
         <div className="hero-orb hero-orb-one" />
         <div className="hero-orb hero-orb-two" />
         <div className="hero-grid" />
@@ -27,12 +27,16 @@ function Hero() {
           className="hero-content"
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.7 }}
+          transition={{ duration: 0.7, ease: "easeOut" }}
         >
           <div className="hero-availability">
             <span className="availability-dot" />
-            {profileData.availability}
+            <span>{profileData.availability}</span>
           </div>
+
+          <p className="hero-eyebrow">
+            {profileData.heroVisual?.label || "BUILD / DESIGN / CREATE"}
+          </p>
 
           <p className="hero-greeting">Hello, I'm</p>
 
@@ -42,6 +46,8 @@ function Hero() {
           </h1>
 
           <h2 className="hero-title">{profileData.title}</h2>
+
+          <p className="hero-tagline">{profileData.tagline}</p>
 
           <p className="hero-description">{profileData.description}</p>
 
@@ -56,42 +62,49 @@ function Hero() {
             </Button>
           </div>
 
-          <div className="hero-socials">
-            {contactData.socialLinks.map((social) => {
-              const Icon = socialIcons[social.icon];
-
-              return (
-                <a
-                  key={social.id}
-                  href={social.url}
-                  target="_blank"
-                  rel="noreferrer"
-                  aria-label={social.label}
-                >
-                  {Icon && <Icon /> }
-                </a>
-              );
-            })}
-          </div>
+          
         </motion.div>
 
         <motion.div
           className="hero-visual"
-          initial={{ opacity: 0, scale: 0.9 }}
-          animate={{ opacity: 1, scale: 1 }}
-          transition={{ duration: 0.8, delay: 0.2 }}
+          initial={{ opacity: 0, scale: 0.9, x: 30 }}
+          animate={{ opacity: 1, scale: 1, x: 0 }}
+          transition={{ duration: 0.9, delay: 0.2, ease: "easeOut" }}
         >
-          <HeroScene/>
+          <div className="hero-visual-label">
+            <span className="hero-visual-label-dot" />
+            {profileData.heroVisual?.label || "DIGITAL EXPERIENCE"}
+          </div>
 
+          <HeroScene
+            skills={profileData.heroSkills}
+            code={profileData.heroVisual?.code || []}
+            technologies={profileData.heroVisual?.technologies || []}
+          />
         </motion.div>
       </div>
 
       <div className="container hero-bottom">
-        <div className="hero-skills">
-          {profileData.heroSkills.map((skill) => (
-            <span key={skill}>{skill}</span>
-          ))}
-        </div>
+{contactData.socialLinks?.length > 0 && (
+            <div className="hero-socials">
+              {contactData.socialLinks.map((social) => {
+                const Icon = socialIcons[social.id] || socialIcons[social.icon];
+
+                return (
+                  <a
+                    key={social.id}
+                    href={social.href || social.url}
+                    target={social.id === "email" ? undefined : "_blank"}
+                    rel={social.id === "email" ? undefined : "noreferrer"}
+                    aria-label={social.label}
+                    className="hero-social"
+                  >
+                    {Icon && <Icon />}
+                  </a>
+                );
+              })}
+            </div>
+          )}
 
         <div className="hero-stats">
           {profileData.stats.map((stat) => (
@@ -103,9 +116,9 @@ function Hero() {
         </div>
       </div>
 
-      <div className="hero-scroll">
+      <div className="hero-scroll-indicator">
         <span>Scroll to explore</span>
-        <span className="hero-scroll-line" />
+        <div className="hero-scroll-line" />
       </div>
     </section>
   );

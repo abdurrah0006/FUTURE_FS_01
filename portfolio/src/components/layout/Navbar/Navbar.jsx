@@ -31,7 +31,7 @@ function Navbar() {
     <header className={`navbar ${scrolled ? "navbar-scrolled" : ""}`}>
       <div className="navbar-container">
         <Link to="/" className="navbar-logo" onClick={closeMenu}>
-          <span>YN</span>
+          <span>AR</span>
         </Link>
 
         <nav className={`navbar-links ${menuOpen ? "navbar-links-open" : ""}`}>
@@ -55,8 +55,6 @@ function Navbar() {
           >
             {theme === "dark" ? <FiSun /> : <FiMoon />}
           </button>
-
-          <ThemeToggle />
 
           <Link to="/contact" className="navbar-contact">
             Let's Talk

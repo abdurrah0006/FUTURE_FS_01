@@ -3,7 +3,7 @@ const contactData = {
   title: "Let's build something meaningful.",
   description: "Have a project, opportunity, or idea? I'd love to hear about it and explore how we can turn it into something real.",
 
-  email: "your.email@example.com",
+  email: "abdurrah0006@gmail.com",
 
   availability: "Available for freelance projects and opportunities",
 
@@ -24,7 +24,7 @@ const contactData = {
       id: "email",
       label: "Email",
       icon: "mail",
-      url: "mailto:your.email@example.com"
+      url: "mailto:abdurrah0006@gmail.com"
     }
   ],
  
@@ -46,8 +46,8 @@ const contactData = {
       {
         id: "email",
         label: "Email",
-        value: "your.email@example.com",
-        href: "mailto:your.email@example.com"
+        value: "abdurrah0006@gmail.com",
+        href: "mailto:abdurrah0006@gmail.com"
       },
       {
         id: "phone",
@@ -83,7 +83,7 @@ const contactData = {
       {
         id: "email",
         label: "Email",
-        href: "mailto:your.email@example.com"
+        href: "mailto:abdurrah0006@gmail.com"
       }
     ],
 
