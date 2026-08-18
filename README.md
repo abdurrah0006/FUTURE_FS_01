@@ -12,11 +12,11 @@ It combines modern frontend development, responsive UI/UX design, animations, in
 
 ### 🏠 Home / HeroLight
 
-![Portfolio Homepage Light](./image/heroLight.png)
+![Portfolio Homepage Light](image/HeroLight.png)
 
 ### 🏠 Home / HeroDark
 
-![Portfolio Homepage Dark](./image/heroDark.png)
+![Portfolio Homepage Dark](image/HeroDark.png)
 
 The homepage introduces my professional profile through a modern hero section featuring animated UI elements, interactive 3D visuals, technology highlights, and clear calls to action.
 
@@ -24,7 +24,7 @@ The homepage introduces my professional profile through a modern hero section fe
 
 ### 👨‍💻 About
 
-![About Page](./image/about.png)
+![About Page](image/About.png)
 
 The About section presents my background, development approach, technical strengths, and professional profile.
 
@@ -32,7 +32,7 @@ The About section presents my background, development approach, technical streng
 
 ### 🚀 Projects
 
-![Projects Page](./image/project.png)
+![Projects Page](image/Project.png)
 
 The Projects section showcases selected development work with project previews, technologies, categories, and links to detailed case studies.
 
@@ -40,7 +40,7 @@ The Projects section showcases selected development work with project previews, 
 
 ### 💼 Experience
 
-![Experience Page](./image/experience.png)
+![Experience Page](image/Experience.png)
 
 The Experience section presents my internships, professional experience, responsibilities, and development journey.
 
@@ -48,7 +48,7 @@ The Experience section presents my internships, professional experience, respons
 
 ### 📄 Resume
 
-![Resume Page](./image/resume.png)
+![Resume Page](./image/Resume.png)
 
 The Resume section provides a structured overview of my education, experience, skills, and professional background.
 
@@ -56,7 +56,7 @@ The Resume section provides a structured overview of my education, experience, s
 
 ### 📬 Contact
 
-![Contact Page](./image/contact.png)
+![Contact Page](image/Contact.png)
 
 The Contact page provides multiple ways to get in touch, including email, phone, WhatsApp, social profiles, and the contact form.
 
